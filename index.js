@@ -185,7 +185,7 @@ window.addEventListener("load", () => {
 
     function ent5 () {
         cat = -77;
-        if (String(form["id"]).length != 9) return ent_err("notMatch");
+        //if (String(form["id"]).length != 9) return ent_err("notMatch");
 
         //Opacity Handle
         document.getElementById("tilt1").style.opacity = "1";
