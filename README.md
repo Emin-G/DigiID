@@ -24,7 +24,7 @@ https://id.eming.me 에서 사용 해볼 수 있습니다.
 
 view.html 의 id_sc_nm 과 id_sc_ln 을 적용 대상인 고등학교의 정보로 변경하는 것을 권장합니다.
 
-index.js 의 188번째 줄 if (String(form["id"]).length != 9) 에서 9를 학생증 바코드 하단의 번호 길이로 변경하는 것을 권장합니다.
+index.js 의 188번째 줄 if (String(form["id"]).length != 9) 를 주석 처리를 해제하고 9를 학생증 바코드 하단의 번호 길이로 변경하는 것을 권장합니다.
 
 PWAs 를 지원합니다.
 웹 앱을 설치할 수 있어 학생증 사용에 있어 편리함을 줄 수 있습니다.
