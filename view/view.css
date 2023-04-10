@@ -1,0 +1,293 @@
+body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2vh;
+    padding: 0;
+    width: 10vh;
+    height: 10vh;
+}
+
+#id_prev {
+    margin: 0;
+    padding: 0;
+    width: 40vh;
+    height: 60vh;
+    border-radius: 2vh;
+    box-shadow: -1vh -1vh 3vh rgba(255, 255, 255, 0.9), 1vh 1vh 3vh rgba(0, 0, 0, 0.3);
+}
+
+#id_back {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 48vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#id_top {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 48vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile_icon {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2vh;
+    padding: 0;
+    width: 10vh;
+    height: 10vh;
+    background-image: url("../sources/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#id_btm {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 12vh;
+    border-radius: 2vh;
+    background-color: #00a495;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#id_sc_logo {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 3vh;
+    margin-bottom: 0;
+    padding: 0;
+    width: 5vh;
+    height: 5vh;
+    background-image: url("../sources/jn_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#id_sc_nm {
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    font-family: "Noto Sans Black";
+    font-size: 3vh;
+}
+
+#id_sc_ln {
+    margin-top: -0.5vh;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+    color: aliceblue;
+    font-family: "Noto Sans Thin";
+    font-size: 1.7vh;
+}
+
+#scnm {
+    margin: 0;
+    padding: 0;
+    color: #070707;
+    font-family: "Noto Sans Thin";
+    font-size: 2.5vh;
+}
+
+#name {
+    margin: 0;
+    padding: 0;
+    color: #070707;
+    font-family: "Noto Sans Thin";
+    font-size: 4vh;
+}
+
+#barcode {
+    margin-top: 3vh;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#expire {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans Thin";
+    font-size: 1.5vh;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #fad3fc, #4b32a7);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hr_al {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vt_al {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tilt {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "Noto Sans Black";
+    font-size: 3.5vh;
+}
+
+.sub {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "Noto Sans Thin";
+    font-size: 2vh;
+}
+
+#app_hint {
+    display: none;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+#app_prompt {
+    width: 100%;
+    height: 8vh;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    box-shadow: 0vh -1vh 3vh rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #070707;
+    font-family: "Noto Sans Thin";
+    font-size: 2vh;
+}
+
+.logo {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 1vh;
+    margin-bottom: 0;
+    padding: 0;
+    width: 5vh;
+    height: 5vh;
+    background-image: url("../sources/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pwa_install {
+    margin-top: 0;
+    margin-left: 3vh;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+    width: 9vh;
+    height: 4vh;
+    border-radius: 6vh;
+    background-color: #00a495;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@keyframes show_id {
+    0% {
+        transform: rotate3d(0.3, 1, 0.2, 90deg);
+    }
+
+    100% {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@keyframes hide_id {
+    0% {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    100% {
+        transform: rotate3d(0.3, 1, 0.2, 90deg);
+    }
+}
+
+@keyframes slide_in {
+    0% {
+        opacity: 0;
+        transform: translateY(10vh);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide_out {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10vh);
+    }
+}
+
+@font-face {font-family: 'Noto Sans Thin';font-style: normal;font-weight: 100;src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans Black';font-style: normal;font-weight: 100;src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans Medium';font-style: normal;font-weight: 100;src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../sources/favi.png">
+<title>DigiID</title>
+<meta name="description" content="비공식 디지털 학생증">
+
+<link rel="manifest" href="manifest.json"/>
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false"></body>
+
+<script src="view.js"></script>
+<link rel="stylesheet" href="view.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/barcodes/JsBarcode.code128.min.js"></script>
+
+<body>
+
+    <div id="id_prev">
+        <div id="id_back">
+            <video id="logo" preload="auto" muted autoplay>
+                <source src="../sources/digiid_icon.mp4">
+            </video>
+
+            <p class="tilt">DigiID</p>
+            <p class="sub">나의 DigiID를 가져오고 있습니다...</p>
+        </div>
+
+        <div id="id_top">
+            <div id="profile_icon"></div>
+
+            <p id="scnm"></p>
+            <p id="name"></p>
+
+            <svg id="barcode"></svg>
+            <p id="expire">만료까지 10:00 남음</p>
+        </div>
+
+        <div id="id_btm">
+            <div id="id_sc_logo"></div>
+            <div class="hr_al">
+                <p id="id_sc_nm">디지고등학교</p>
+                <p id="id_sc_ln">www.DigiID.hs.kr</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="app_hint">
+        <div id="app_prompt">
+            <div class="logo"></div>
+            앱으로 빠르게 꺼내보세요.
+            <div id="pwa_install">설치</div>
+        </div>
+    </div>
+
+</body>
+</html>

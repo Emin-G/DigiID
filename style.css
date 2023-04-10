@@ -1,0 +1,370 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#load {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    z-index: 77;
+}
+
+#author_hint {
+    position: fixed;
+    bottom: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1vh;
+    padding: 0;
+    color: #070707;
+    font-family: "Noto Sans Thin";
+    font-size: 1vh;
+}
+
+#browser {
+    margin-top: 5vh;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#chrome_icon {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 5vh;
+    margin-bottom: 0;
+    padding: 0;
+    width: 10vh;
+    height: 10vh;
+    background-image: url("./sources/chrome_icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#safari_icon {
+    margin-top: 0;
+    margin-left: 5vh;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+    width: 10vh;
+    height: 10vh;
+    background-image: url("./sources/safari_icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10vh;
+    padding: 0;
+    width: 15vh;
+    height: 15vh;
+}
+
+#content {
+    margin-top: 3vh;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-bottom: 3vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#tilt1, #tilt2 {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "Noto Sans Medium";
+    font-size: 3vh;
+    opacity: 1;
+    animation: 0.5s 0s 1 slide_in forwards;
+}
+
+#sub {
+    margin-top: 1vh;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+    color: black;
+    font-family: "Noto Sans Thin";
+    font-size: 2vh;
+    opacity: 0;
+    animation: 0.5s 0.3s 1 slide_in forwards;
+}
+
+input {
+    text-align: center;
+    font-family: "Noto Sans Black";
+    font-size: 3vh;
+    margin: 0;
+    height: 5vh;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: none;
+    border-bottom: 3px solid #dedede;
+    outline: none;
+    color: #050505;
+    transition: all 2s;
+}
+
+#sc_lv, #sc_cl, #sc_nm {
+    width: 8vh;
+}
+  
+input:focus {
+    border-bottom: 3px solid #00A495;
+}
+
+#btm_hold {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: end;
+    z-index: -77;
+}
+
+#ent {
+    margin-top: 3vh;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-bottom: 3vh;
+    padding: 0;
+    width: 86vw;
+    height: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5vh;
+    color: aliceblue;
+    font-family: "Noto Sans Thin";
+    font-size: 2.2vh;
+    background-color: #00A495;
+    transition: 0.3s background-color;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#ent:hover {
+    background-color: #067e74;
+}
+
+#sc_inp {
+    margin-top: 5vh;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    color: #070707;
+    font-family: "Noto Sans Thin";
+    font-size: 3vh;
+    opacity: 0;
+    display: none;
+}
+
+#prepare {
+    margin-top: 5vh;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#id_icon {
+    margin: 0;
+    padding: 0;
+    width: 20vh;
+    height: 20vh;
+    background-image: url("./sources/id_icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#nm_inp {
+    margin-top: 5vh;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#name {
+    width: 30vh;
+}
+
+#auth {
+    margin-top: 5vh;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#zxing {
+    width: 100%;
+    border-radius: 2vh;
+    border: 2px solid #00A495;
+}
+
+#warn {
+    margin-top: 2vh;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #070707;
+    font-family: "Noto Sans Thin";
+    font-size: 2vh;
+}
+
+.warn_icon {
+    margin-top: 2vh;
+    margin-left: 0;
+    margin-right: 1vh;
+    margin-bottom: 0;
+    padding: 0;
+    width: 5vh;
+    height: 5vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#notWork_icon {
+    background-image: url("./sources/destroy_icon.png");
+}
+
+#notAlt_icon {
+    background-image: url("./sources/alt_icon.png");
+}
+
+#notDimm_icon {
+    background-image: url("./sources/bright_icon.png");
+}
+
+#notBlue_icon {
+    background-image: url("./sources/bluelight_icon.png");
+}
+
+#auth_fail {
+    margin-top: 5vh;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#fail_icon {
+    background-image: url("./sources/error.png");
+}
+
+.hr_al {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vt_al {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fade_out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slide_in {
+    0% {
+        transform: translateY(2vh);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide_out {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(2vh);
+        opacity: 0;
+    }
+}
+
+@font-face {font-family: 'Noto Sans Thin';font-style: normal;font-weight: 100;src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans Black';font-style: normal;font-weight: 100;src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans Medium';font-style: normal;font-weight: 100;src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

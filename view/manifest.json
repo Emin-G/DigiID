@@ -1,0 +1,20 @@
+{
+    "name": "DigiID",
+    "short_name": "DigiID",
+    "start_url": "../view/view.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "description": "비공식 디지털 학생증",
+    "icons": [
+        {
+            "src": "../sources/icons/144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "../sources/icons/512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
