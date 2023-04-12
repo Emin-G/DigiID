@@ -22,6 +22,9 @@ https://id.eming.me 에서 사용 해볼 수 있습니다.
 
 아무 바코드 형식이나 인식 ➜ code128 형식의 바코드 생성
 
+source/jn_logo.png 을 적용 대상인 고등학교의 로고 PNG 파일로 변경하는 것을 권장합니다.
+덮어쓰기 해버리면 됩니다.
+
 view.html 의 id_sc_nm 과 id_sc_ln 을 적용 대상인 고등학교의 정보로 변경하는 것을 권장합니다.
 
 index.js 의 188번째 줄 if (String(form["id"]).length != 9) 를 주석 처리를 해제하고 9를 학생증 바코드 하단의 번호 길이로 변경하는 것을 권장합니다.
